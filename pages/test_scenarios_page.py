@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 
 
-class TestScenarioPage(BasePage):
+class TestScenariosPage(BasePage):
 
     TEST_SCENARIOS_MENU = (By.XPATH, "//a[text()='Test Scenarios']")
 
