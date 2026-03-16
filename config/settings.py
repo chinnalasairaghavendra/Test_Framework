@@ -10,6 +10,7 @@ class Config:
 
     BROWSER = os.getenv("BROWSER", "chrome")
 
-    HEADLESS = os.getenv("HEADLESS", "false").lower() == "true"
+    # Default headless for CI environments like Jenkins
+    HEADLESS = os.getenv("HEADLESS", "true").lower() == "true"
 
     GRID_URL = os.getenv("GRID_URL", None)
